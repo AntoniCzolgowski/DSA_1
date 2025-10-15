@@ -1,3 +1,7 @@
+from src.part_a_structures.event_linkedlist import Node
+from src.part_a_structures.event import Event
+
+
 from datetime import datetime
 
 def event_key(event):
