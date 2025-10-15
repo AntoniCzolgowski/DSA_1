@@ -1,3 +1,7 @@
+from datetime import datetime, timedelta
+import random
+from src.part_a_structures.event import Event
+
 # Random Event Generator
 
 def generate_random_events(n):
