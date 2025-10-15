@@ -8,7 +8,7 @@ def event_key(event):
     return datetime.strptime(f"{event.date} {event.time}", "%Y-%m-%d %H:%M")
 
 
-#Quick sort on Dynamic Array
+#Arr Quick Sort
 def quick_sort_array(events):
     if len(events) <= 1:
         return events
@@ -21,7 +21,7 @@ def quick_sort_array(events):
 
 
 
-#Quick Sort Linked List
+#LL Quick Sort
 def quick_sort_linkedlist(ll):
     events = ll.to_list()
     events = quick_sort_array(events)
