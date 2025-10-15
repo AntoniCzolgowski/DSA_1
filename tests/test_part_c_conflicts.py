@@ -1,3 +1,10 @@
+from src.part_a_structures.event import Event
+from src.part_a_structures.event_arraylist import EventArrayList
+from src.part_a_structures.event_linkedlist import EventLinkedList
+from src.part_c_search_conflicts.conflict_detection import conflict_detection_array, conflict_detection_linkedlist
+
+
+
 #Formal tests
 
 def test_array_no_conflicts():
