@@ -1,12 +1,11 @@
-```markdown
 # Event Scheduling System — Data Structures & Algorithms Project
-
----
 
 ## Team Contributions
 
 ### **Aayush Bharadwaj**
+
 **Part A: Event Storage Structures**
+
 - Implemented two event storage systems: **Dynamic ArrayList** and **Singly Linked List**
 - Supported operations: insert, delete, search_by_id, list_all
 - Built the Random Event Generator
@@ -15,7 +14,9 @@
 ---
 
 ### **Nivid Pathak**
+
 **Part B: Sorting Algorithms**
+
 - Implemented Insertion Sort, Merge Sort, and Quick Sort
 - Optimized for both array and linked list backends
 - Added helper functions: append, to_list, from_list
@@ -25,7 +26,9 @@
 ---
 
 ### **Thiyagu Rajendran**
+
 **Part C: Searching & Conflict Detection**
+
 - Developed Linear Search and Binary Search for event lookup by ID
 - Created Conflict Detection algorithms
 - Wrote unit tests for Part C- Searching Algorithms
@@ -33,7 +36,9 @@
 ---
 
 ### **Antoni Czołgowski**
+
 **Part D. Scalability Challenge and Part C: Conflict Detection**
+
 - Project Management
 - Created Conflict Detection algorithms
 - Wrote unit tests for Part C- Conflict Detection Algorithms
@@ -55,4 +60,3 @@ This simplification reduces computational complexity, ensures predictable runtim
 
 All components are implemented, verified, and benchmarked.  
 **Result:** 10 automated tests and 2 visualization test — **100% success rate**
-```
