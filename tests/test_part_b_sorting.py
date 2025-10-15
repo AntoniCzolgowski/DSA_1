@@ -16,7 +16,6 @@ from src.part_b_sorting.quick_sort import quick_sort_array, quick_sort_linkedlis
 def test_all_sorts_with_plot():
     sizes = [50, 500, 5000]
 
-    # Store times for plotting
     times_insertion_array, times_merge_array, times_quick_array = [], [], []
     times_insertion_ll, times_merge_ll, times_quick_ll = [], [], []
 
@@ -26,7 +25,7 @@ def test_all_sorts_with_plot():
     for n in sizes:
         events = generate_random_events(n)
 
-        #Array Insertion Sort
+        #Arr Insertion Sort
         arr = EventArrayList()
         arr.events = events.copy()
         arr.size = n
@@ -34,17 +33,17 @@ def test_all_sorts_with_plot():
         insertion_sort_array(arr)
         t_insertion_array = time.perf_counter() - start
 
-        #Array Merge Sort
+        #Arr Merge Sort
         start = time.perf_counter()
         merge_sort_array(events.copy())
         t_merge_array = time.perf_counter() - start
 
-        #Array Quick Sort
+        #Arr Quick Sort
         start = time.perf_counter()
         quick_sort_array(events.copy())
         t_quick_array = time.perf_counter() - start
 
-        #Linked Insertion Sort
+        #LL Insertion Sort
         ll = EventLinkedList()
         for e in events:
             ll.append(e)
@@ -52,7 +51,7 @@ def test_all_sorts_with_plot():
         insertion_sort_linkedlist(ll)
         t_insertion_ll = time.perf_counter() - start
 
-        #Linked Merge Sort
+        #LL Merge Sort
         ll2 = EventLinkedList()
         for e in events:
             ll2.append(e)
@@ -60,7 +59,7 @@ def test_all_sorts_with_plot():
         ll2.head = merge_sort_linkedlist(ll2.head)
         t_merge_ll = time.perf_counter() - start
 
-        #Linked Quick Sort
+        #LL Quick Sort
         ll3 = EventLinkedList()
         for e in events:
             ll3.append(e)
@@ -89,8 +88,6 @@ def test_all_sorts_with_plot():
     plt.plot(sizes, times_quick_ll, 'b--o', label='Quick Sort (LinkedList)')
     plt.xlabel("Number of Events")
     plt.ylabel("Execution Time (seconds)")
-    plt.xscale("log")  # log-scale for clearer separation
-    plt.yscale("log")
     plt.grid(True, which="both", linestyle="--", linewidth=0.5)
     plt.legend()
     plt.tight_layout()
@@ -100,15 +97,15 @@ def test_all_sorts_with_plot():
 def test_sorted_event_order():
     print("\nSORTED EVENT LIST TEST\n")
     random.seed(42)
-    events = generate_random_events(8)
+    events = generate_random_events(10)
 
-    print("Original Events (unsorted):")
+    print("Original Events:")
     for e in events:
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
     print("\nARRAY BASED SORTS")
 
-    #Array Insertion Sort
+    #Arr Insertion Sort
     arr1 = EventArrayList()
     arr1.events = events.copy()
     arr1.size = len(events)
@@ -117,13 +114,13 @@ def test_sorted_event_order():
     for e in arr1.events:
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
-    # Array Merge Sort
+    # Arr Merge Sort
     sorted_merge = merge_sort_array(events.copy())
     print("\nArr Merge Sort:")
     for e in sorted_merge:
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
-    #Array Quick Sort
+    #Arr Quick Sort
     sorted_quick = quick_sort_array(events.copy())
     print("\n Arr Quick Sort:")
     for e in sorted_quick:
@@ -131,7 +128,7 @@ def test_sorted_event_order():
 
     print("\nLINKED LIST BASED SORTS")
 
-    #Linked Insertion Sort
+    #LL Insertion Sort
     ll1 = EventLinkedList()
     for e in events:
         ll1.append(e)
@@ -140,7 +137,7 @@ def test_sorted_event_order():
     for e in ll1.to_list():
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
-    #Linked Merge Sort
+    #LL Merge Sort
     ll2 = EventLinkedList()
     for e in events:
         ll2.append(e)
@@ -149,12 +146,12 @@ def test_sorted_event_order():
     for e in ll2.to_list():
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
-    #Linked Quick Sort
+    #LL Quick Sort
     ll3 = EventLinkedList()
     for e in events:
         ll3.append(e)
     quick_sort_linkedlist(ll3)
-    print("\nLL Quick Sort:")
+    print("\n LL Quick Sort:")
     for e in ll3.to_list():
         print(f"  {e.title:<15}  {e.date}  {e.time}")
 
