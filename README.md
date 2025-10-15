@@ -33,7 +33,7 @@
 ---
 
 ### **Antoni Czołgowski**
-**Part D. Scalability Challenge and Part C: Conflict Detection **
+**Part D. Scalability Challenge and Part C: Conflict Detection**
 - Project Management
 - Created Conflict Detection algorithms
 - Wrote unit tests for Part C- Conflict Detection Algorithms
@@ -47,10 +47,9 @@
 ## Design Assumptions
 
 Each event includes only a **single starting time** rather than a duration.  
-This simplification reduces computational complexity, ensures predictable runtime behavior, and keeps the system easily adaptable for future versions that handle duration-based events.  
+This simplification reduces computational complexity, ensures predictable runtime behavior, and keeps the system easily adaptable for future versions that handle duration-based events.
 
 ---
-
 
 ## Project Status
 
