@@ -1,3 +1,16 @@
+import time
+import random
+import matplotlib.pyplot as plt
+from src.part_a_structures.event import Event
+from src.part_a_structures.event_arraylist import EventArrayList
+from src.part_a_structures.event_linkedlist import EventLinkedList
+from src.utils.generator import generate_random_events
+from src.part_b_sorting.insertion_sort import insertion_sort_array, insertion_sort_linkedlist
+from src.part_b_sorting.merge_sort import merge_sort_array, merge_sort_linkedlist
+from src.part_b_sorting.quick_sort import quick_sort_array, quick_sort_linkedlist
+
+
+
 # Testing
 #Test 1
 def test_all_sorts_with_plot():
