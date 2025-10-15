@@ -12,7 +12,7 @@ def generate_random_events(n):
     events = []
     for i in range(n):
         title = random.choice(titles)
-        date = (base_date + timedelta(days=random.randint(0, 180))).strftime("%Y-%m-%d")
+        date = (base_date + timedelta(days=random.randint(0, 365))).strftime("%Y-%m-%d")
         time = f"{random.randint(8, 20):02d}:{random.choice(['00','30'])}"
         location = random.choice(locations)
         events.append(Event(i, title, date, time, location))
