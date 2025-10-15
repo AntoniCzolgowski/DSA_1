@@ -4,7 +4,7 @@
 
 ### **Aayush Bharadwaj**
 
-**Part A: Event Storage Structures**
+**Part A: Event Storage Structures and Random Event Generator**
 
 - Implemented two event storage systems: Dynamic ArrayList and Singly Linked List
 - Supported operations: insert, delete, search_by_id, list_all
@@ -15,7 +15,7 @@
 
 ### **Nivid Pathak**
 
-**Part B: Sorting Algorithms**
+**Part B: Sorting Algorithms and Part A: Linked List Helper Functions**
 
 - Implemented Insertion Sort, Merge Sort, and Quick Sort
 - Optimized for both array and linked list backends
