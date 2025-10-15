@@ -1,3 +1,6 @@
+from src.part_b_sorting.merge_sort import merge_sort_array, merge_sort_linkedlist
+
+
 
 #Conflict Detection on Array
 
