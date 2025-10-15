@@ -6,7 +6,7 @@ from datetime import datetime
 def event_key(event):
     return datetime.strptime(f"{event.date} {event.time}", "%Y-%m-%d %H:%M")
 
-#Merge sort on Dynamic Array
+#Arr Merge Sort
 def merge_sort_array(events):
     if len(events) <= 1:
         return events
@@ -29,7 +29,9 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
-#Merge sort on Linked List
+
+
+#LL Merge Sort
 def merge_sort_linkedlist(head):
     if not head or not head.next:
         return head
@@ -48,8 +50,8 @@ def sorted_merge(a,b):
     if not b:
         return a
 
-    dummy = Node(None)
-    tail = dummy
+    dummy_node = Node(None)
+    tail = dummy_node
 
     while a and b:
         if event_key(a.event) <= event_key(b.event):
@@ -65,11 +67,11 @@ def sorted_merge(a,b):
     elif b:
         tail.next = b
 
-    return dummy.next
+    return dummy_node.next
 
 
 
-def get_middle(head):
+def middle(head):
     if not head:
         return head
     slow = head
