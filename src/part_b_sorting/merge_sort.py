@@ -35,7 +35,7 @@ def merge(left, right):
 def merge_sort_linkedlist(head):
     if not head or not head.next:
         return head
-    middle = get_middle(head)
+    middle = middle_ele(head)
     next_to_middle = middle.next
     middle.next = None
 
@@ -71,7 +71,7 @@ def sorted_merge(a,b):
 
 
 
-def middle(head):
+def middle_ele(head):
     if not head:
         return head
     slow = head
