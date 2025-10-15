@@ -40,3 +40,11 @@ class EventArrayList:
         for i in range(self.size):
             result.append(self.events[i])
         return result
+
+
+
+# We intentionally implemented this function in a "manual" way.
+# The goal was to minimize reliance on built-in Python methods like append(), insert(), or del.
+# Its not optimal in a production envioronment, 
+# however it allowed us to have full controll on a size of the array and on the internal logic.
+# This design choice makes it easier to observe and understand how dynamic resizing works in practice.
