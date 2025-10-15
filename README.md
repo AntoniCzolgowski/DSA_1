@@ -43,7 +43,7 @@
 - Created Conflict Detection algorithms
 - Wrote unit tests for Part C- Conflict Detection Algorithms
 - Integrated all modules into one system
-- Wrote complexity (Big O) and scalability analysis for all algorithms
+- Wrote about complexity (Big O) for all algorithms
 - Proposed optimization strategies for 1 000 000-event scalability.
 - Prepared a Demo
 
