@@ -1,3 +1,5 @@
+# Singly Linked List Implementation
+
 class Node:
     def __init__(self, event):
         self.event = event
@@ -41,3 +43,27 @@ class EventLinkedList:
             result.append(current.event)
             current = current.next
         return result
+
+
+    def append(self, event):
+        new_node = Node(event)
+        if not self.head:
+            self.head = new_node
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new_node
+
+    def to_list(self):
+        events = []
+        temp = self.head
+        while temp:
+            events.append(temp.event)
+            temp = temp.next
+        return events
+
+    def from_list(self, events):
+        self.head = None
+        for e in events:
+            self.append(e)
