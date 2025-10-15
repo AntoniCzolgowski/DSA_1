@@ -1,3 +1,5 @@
+from src.part_a_structures.event_linkedlist import Node
+
 from datetime import datetime
 
 
