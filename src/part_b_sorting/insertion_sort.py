@@ -6,7 +6,7 @@ from datetime import datetime
 def event_key(event):
     return datetime.strptime(f"{event.date} {event.time}", "%Y-%m-%d %H:%M")
 
-#Insertion sort on Dynamic Array
+#Arr Insertion Sort
 def insertion_sort_array(event_list):
     for i in range(1, event_list.size):
         key_event = event_list.events[i]
@@ -17,18 +17,18 @@ def insertion_sort_array(event_list):
             j -= 1
         event_list.events[j + 1] = key_event
 
-#Insertion sort on Linked List
+#LL Insertion Sort
 def insertion_sort_linkedlist(ll):
     sorted_head = None
     current = ll.head
     while current:
         next_node = current.next
-        sorted_head = sorted_insert_fast(sorted_head, current)
+        sorted_head = insert_sorted(sorted_head, current)
         current = next_node
     ll.head = sorted_head
 
 
-def sorted_insert_fast(head, new_node):
+def insert_sorted(head, new_node):
     if not head or new_node.event.timestamp < head.event.timestamp:
         new_node.next = head
         return new_node
