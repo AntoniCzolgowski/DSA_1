@@ -1,3 +1,6 @@
+from src.part_a_structures.event_arraylist import EventArrayList
+
+
 def linear_search_array_partc(event_array, event_id):
     for i in range(event_array.size):
         if event_array.events[i].id == event_id:
