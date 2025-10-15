@@ -50,8 +50,8 @@ def sorted_merge(a,b):
     if not b:
         return a
 
-    dummy_node = Node(None)
-    tail = dummy_node
+    temp = Node(None)
+    tail = temp
 
     while a and b:
         if event_key(a.event) <= event_key(b.event):
@@ -67,7 +67,7 @@ def sorted_merge(a,b):
     elif b:
         tail.next = b
 
-    return dummy_node.next
+    return temp.next
 
 
 
