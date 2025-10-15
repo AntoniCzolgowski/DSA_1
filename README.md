@@ -35,7 +35,7 @@
 
 ---
 
-### **Antoni Czołgowski**
+### **Antoni Czolgowski**
 
 **Part D. Scalability Challenge and Part C: Conflict Detection**
 
