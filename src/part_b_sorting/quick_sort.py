@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def event_key(event):
     return datetime.strptime(f"{event.date} {event.time}", "%Y-%m-%d %H:%M")
 
