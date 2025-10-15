@@ -6,7 +6,7 @@
 
 **Part A: Event Storage Structures**
 
-- Implemented two event storage systems: **Dynamic ArrayList** and **Singly Linked List**
+- Implemented two event storage systems: Dynamic ArrayList and Singly Linked List
 - Supported operations: insert, delete, search_by_id, list_all
 - Built the Random Event Generator
 - Wrote unit tests for Part A
